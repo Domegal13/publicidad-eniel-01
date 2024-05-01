@@ -16,46 +16,57 @@
       rel="stylesheet"
     />
   </head>
-  <body class="container bg-slate-900 box-border">
+  <body class="bg-slate-900 box-border">
     <header
       class="relative pt-6 pb-6 ml-[8%] mr-[8%] border border-slate-600 flex justify-between"
     >
-      <a href="#" class="flex items-center">
-        <i class="bx bx-home text-white text-xl align-middle pl-2">@Eniel </i>
+      <a href="#" title="logo" class="flex items-center">
+        <i class="bx bx-home text-white text-xl align-middle pl-2">@Eniel</i>
       </a>
 
       <ul
-        class="nav-list bg-slate-800 text-white hidden flex-col justify-between absolute top-20 right-0 rounded-md w-[50%] transition-all border sm:flex sm:flex-row sm:relative sm:top-0 sm:bg-transparent"
+        class="nav-list bg-slate-800 text-white transition-all flex-col justify-between absolute top-20 right-0 rounded-md w-[50%] backdrop:opacity-60 sm:flex sm:flex-row sm:relative sm:top-0 sm:bg-transparent sm:justify-center"
       >
-        <a
-          href="#"
-          class="w-full pt-2 pl-4 block hover:bg-slate-400 hover:text-slate-950 hover:font-bold"
+        <li
+          class="pl-2 pr-2 hover:bg-slate-400 hover:text-slate-950 hover:font-bold flex justify-between"
         >
-          <li class="pb-3">Home</li>
-        </a>
-        <a
-          href="#"
-          class="w-full pt-2 pl-4 block hover:bg-slate-400 hover:text-slate-950 hover:font-bold"
+          <a href="#" title="bx-home" class="w-full pt-2 block">Home </a>
+
+          <i
+            class="close-nav flex bx bx-x text-2xl m-auto pt-2 text-red-600 cursor-pointer sm:hidden sm:text-transparent"
+          ></i>
+        </li>
+
+        <li
+          class="pl-2 pr-2 hover:bg-slate-400 hover:text-slate-950 hover:font-bold"
         >
-          <li class="pb-3">Products</li>
-        </a>
-        <a
-          href="#"
-          class="w-full pt-2 pl-4 block hover:bg-slate-400 hover:text-slate-950 hover:font-bold"
+          <a href="#" title="products" class="w-full pt-2 block">Products </a>
+        </li>
+
+        <li
+          class="pl-2 pr-2 hover:bg-slate-400 hover:text-slate-950 hover:font-bold"
         >
-          <li class="pb-2">Contact Us</li>
-        </a>
+          <a href="#" title="contact us" class="w-full pt-2 block"
+            >Contact Us
+          </a>
+        </li>
       </ul>
 
       <ul
-        class="nav-icons border rounded-full p-3 mr-2 shadow-[0px_0px_30px_1px_rgba(255,255,225,0.8)] h-12"
+        class="nav-icons border rounded-full min-w-20 p-3 mr-2 shadow-[0px_0px_30px_1px_rgba(255,255,225,0.8)] h-12 flex"
       >
-        <a href="#" class="search-icon">
-          <i class="bx bx-search text-white text-xl pr-3"></i>
-        </a>
-        <a href="#" class="menu-hamb">
-          <i class="bx bx-menu text-white text-2xl pr-3"></i>
-        </a>
+        <li class="pl-2 pr-3 align-middle flex">
+          <a href="#" title="search-icon" class="search-icon">
+            <i class="bx bx-search text-white text-xl align-middle"></i>
+          </a>
+          <p class="pl-2 text-white hidden sm:inline-block">Search...</p>
+        </li>
+
+        <li class="pr-2 sm:hidden">
+          <a href="#" title="menu-hamb" class="menu-hamb">
+            <i class="bx bx-menu text-white text-2xl align-middle"></i>
+          </a>
+        </li>
       </ul>
     </header>
     <main class="pl-3 pt-4"></main>
